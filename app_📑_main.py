@@ -8,10 +8,10 @@ Created on Fri Jul 18 19:54:05 2022
 import streamlit as st
 import pandas as pd
 
-header = st.beta_container()
-dataset = st.beta_container()
-features = st.beta_container()
-model_trainnig = st.beta_container()
+header = st.container()
+dataset = st.container()
+features = st.container()
+model_trainnig = st.container()
 
 with header:
     st.title("Hites: Fuga de Clientes")
