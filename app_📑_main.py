@@ -24,4 +24,4 @@ with dataset:
     col3, col4 = st.columns([1,1])
     col3.header("Se Observan los 5 primeros registros del Dataset LOCAL")
     df = pd.read_csv("LOCAL.csv", sep = ";")
-    st.write(df.head())
+    col4.write(df.head())
