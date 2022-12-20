@@ -27,3 +27,4 @@ with dataset:
     df = pd.read_csv("LOCAL.csv", sep = ";")
     col4.write(df.head())
     sns.barplot(df["CANAL"].value_counts())
+    plt.show()
