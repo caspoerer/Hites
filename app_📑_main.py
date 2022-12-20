@@ -25,7 +25,7 @@ with dataset:
     st.header("Se observan los 5 primeros registros del Dataset LOCAL")
     col3, col4 = st.columns([1,1])
     df = pd.read_csv("LOCAL.csv", sep = ";")
-    col4.write(df.head())
+    col4.write(df.head(10))
     cantidad = df.CANAL.value_counts().tolist()
     nombre = df.CANAL.value_counts().index.tolist()
     df1=pd.DataFrame(cantidad)
