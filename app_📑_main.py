@@ -23,7 +23,7 @@ with header:
 
 with dataset:
     col3, col4 = st.columns([1,1])
-    col3.header("Se observan los 5 primeros registros del Dataset LOCAL")
+    st.header("Se observan los 5 primeros registros del Dataset LOCAL")
     df = pd.read_csv("LOCAL.csv", sep = ";")
     col4.write(df.head())
     cantidad = df.CANAL.value_counts().tolist()
@@ -31,7 +31,7 @@ with dataset:
     df1=pd.DataFrame(cantidad)
     df1=df1.T
     df1.columns = nombre
-    st.bar_chart(df1,width=15)
+    col3.bar_chart(df1,width=15)
     
     #sns.barplot(nombre,cantidad)
 
