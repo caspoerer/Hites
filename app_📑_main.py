@@ -31,7 +31,7 @@ with dataset:
     df1=pd.DataFrame(cantidad)
     df1=df1.T
     df1.columns = nombre
-    st.bar_chart(df1,width=30)
+    st.bar_chart(df1,width=15)
     
     #sns.barplot(nombre,cantidad)
 
