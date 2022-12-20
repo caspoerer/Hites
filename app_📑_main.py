@@ -32,6 +32,8 @@ with dataset:
     df1=df1.T
     df1.columns = nombre
     st.bar_chart(df1)
+    
+    sns.barplot(nombre,cantidad)
 
     
 #st.bar_chart(df, x=df["CANAL"].value_counts().index, y=df["CANAL"].value_counts().tolist())
