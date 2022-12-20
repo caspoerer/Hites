@@ -28,6 +28,6 @@ with dataset:
     col4.write(df.head())
 
     
-st.bar_chart(x=df.CANAL.value_counts().index, y=df.CANAL.value_counts().tolist())
+st.bar_chart(df, x=df["CANAL"].value_counts().index, y=df["CANAL"].value_counts().tolist())
     #plt.bar(df.CANAL.value_counts().index, df.CANAL.value_counts().tolist())
     #plt.show()
