@@ -26,3 +26,4 @@ with dataset:
     col3.header("Se observan los 5 primeros registros del Dataset LOCAL")
     df = pd.read_csv("LOCAL.csv", sep = ";")
     col4.write(df.head())
+    sns.barplot(df.CANAL.value_counts())
