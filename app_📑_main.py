@@ -26,5 +26,6 @@ with dataset:
     col3.header("Se observan los 5 primeros registros del Dataset LOCAL")
     df = pd.read_csv("LOCAL.csv", sep = ";")
     col4.write(df.head())
-    plt.bar(df.CANAL.value_counts().index, df.CANAL.value_counts().tolist())
-    plt.show()
+    st.bar_chart(x=df.CANAL.value_counts().index, y=df.CANAL.value_counts().tolist())
+    #plt.bar(df.CANAL.value_counts().index, df.CANAL.value_counts().tolist())
+    #plt.show()
