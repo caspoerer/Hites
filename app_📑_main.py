@@ -16,8 +16,8 @@ model_trainnig = st.container()
 with header:
     st.title("Hites: Fuga de Clientes")
     #col1, col2 = st.columns([1,1])
-    st.markdown("##A través de esta aplicación podrás monitorear la fuga de clientes")
-    st.markdown("Te mostraremos paso a pase el porqué los clientes se fugan y te entregaremos una recomendación para la retencion")
+    st.markdown("## A través de esta aplicación podrás monitorear la fuga de clientes")
+    st.markdown("### Te mostraremos paso a pase el porqué los clientes se fugan y te entregaremos una recomendación para la retencion")
     col1, col2 = st.columns([1,1])
     
 
