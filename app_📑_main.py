@@ -33,6 +33,9 @@ with dataset:
     df1.columns = nombre
     col3.bar_chart(df1,width=400,use_container_width=True)
     
+with features:
+    st.download_button(label = 'Download Data', data = df.to_csv(), file_name='data.csv' )
+    
     #sns.barplot(nombre,cantidad)
 
     
